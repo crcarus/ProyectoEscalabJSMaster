@@ -1,0 +1,253 @@
+section{
+  margin-top: 0px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.title {
+  font-size: 6vw;
+  margin: 1px;
+}
+
+/* Estilo HTML Juego */
+.container { /* div container entorno juego*/
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-panel {/*posición panel de juego */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {/*estilo panel de juego */
+  
+  background-color:#4FA3F1;
+  font-size: 2vw;
+  margin-bottom: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0 1.5vw 0 1.5vw;
+  position: relative;
+}
+
+.panel /*estilo listas panel de juego*/
+ul
+li
+span {
+  color: white !important;
+}
+
+.container-juego { /*posición logica de juego*/
+  margin-left: 8em; 
+  margin-right: 8em;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.juego { /*estilo juego*/
+  height: 100vh;
+  width: 100vh;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-height: 60vh;
+  max-width: 60vh;
+}
+
+.color {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: left;
+}
+
+.celeste {
+  background: #22a6b3;
+}
+
+.celeste.light {
+  background: #7ed6df;
+}
+
+.violeta {
+  background: #be2edd;
+}
+
+.violeta.light {
+  background: #e056fd;
+}
+
+.naranja {
+  background: #f0932b;
+}
+
+.naranja.light {
+  background: #ffbe76;
+}
+
+.verde {
+  background: #6ab04c;
+}
+
+.verde.light {
+  background: #badc58;
+}
+
+.btn-empezar { /*estilo boton*/
+
+  width: 400px;
+  height: 100px;
+  background: #ecf0f1;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+/* Header Index */
+
+#header-fondo{
+  max-width: 540px;
+  min-width: 1500px;
+  height:  150px;
+  background-color: #ffffff;
+}
+
+/* Tarjeta Paises*/
+
+.main{
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap ;
+  margin: auto;
+}
+
+.container .card{
+  width: 300px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgb(0,0,0,0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:  1fr 2fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Estilo Filtros Tarjetas */
+.filter-content{
+  display:  flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+}
+
+.form-buscar{
+  box-shadow: 0 4px 6px -1px rgba(53, 80, 231, 0.1), 0 2px 4px -1px rgba(42, 20, 138, 0.06);
+  border-radius: 0.35rem;
+  background-color: #ffffff;
+  padding: 1rem;
+ 
+  
+}
+
+.form-buscar i {
+  opacity: 0.5;
+ 
+}
+
+.form-buscar input {
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  background-color: #0000;
+  color: #0000;
+
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.select-css{
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.35rem;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+
+/* OTROS */
+
+@media (max-width: 1000px){
+  .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 750px){
+  .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px){
+  
+
+  .filter-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .form-buscar {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .form-buscar input{
+      width: 85%;
+  }
+  
+  .grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!--Font Google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+        <!--CCS STYLO-->
+        <link rel="stylesheet" href="D:\cecar\Cristian Carus\PLATZI\Java Script - ESCALAB\Material Proyecto\Proyecto\stylo.css">
+        <title>Proyecto JSMaster</title>
+    </head>
+    <body>
+        <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-dark "> <!--Barra nav fija-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Proyecto Escalab</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span><!--Boton resposive-->
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> <!--Alineo a la derecha-->
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="D:\cecar\Cristian Carus\PLATZI\Java Script - ESCALAB\Material Proyecto\Proyecto\juego.html">¿Quieres Jugar?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <header class="container filter-content my-2 " id="header-fondo">
+            <form class="form-inline form-buscar" id="buscarPais">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar Pais  " aria-label="Search" id="inputBuscarPais">
+            </form> 
+            <form class="form-inline form-buscar" id="buscarCapital">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar Capital" aria-label="Search" id="inputBuscarCapital">   
+            </form>
+
+
+            <div class='content'>
+                <select id='continentes' class=" select-css">
+                    <option>Selecciona un continente:</option>
+                    <option value='Americas'>Americas</option>
+                    <option value='Asia'>Asia</option>
+                    <option value='Europe'>Europe</option>
+                    <option value='Oceania'>Oceania</option>
+                    <option value='Polar'>Polar</option>
+                </select>
+            
+            <div>
+
+        </header>
+
+        
+        <main class="container grid" id="tarjetaPaises">
+        </main>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>    
+        <script src="D:\cecar\Cristian Carus\PLATZI\Java Script - ESCALAB\Material Proyecto\Proyecto\proyecto.js"></script>
+        <!-- Option: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>    
+    </body>
+</html>
