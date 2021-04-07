@@ -81,7 +81,6 @@ const inputBuscarCapital = document.getElementById('inputBuscarCapital');
 const busquedaByCapital = data => { //Busqueda de Tarjeta Por Ciudad
     buscarCapital.addEventListener('keyup', e => {
         const inputCapital = inputBuscarCapital.value.toLowerCase()
-        localStorage.setItem("Cuidad",inputCapital)
         console.log(inputCapital)
         const arrayFiltradoCapital = data.filter(item => {
             const letraApi = item.capital.toLowerCase()
@@ -120,7 +119,6 @@ function cargaContinentes()
             });
             
             // console.log(poblacionByRegion);
-
             let numeroAleatorio= Math.random()
             let cantidadPaisesArray = continenteRegion.length //Cantidad Paises segun región
             let numeroAleaPais=Math.floor(numeroAleatorio*cantidadPaisesArray)
@@ -142,7 +140,7 @@ function cargaContinentes()
 
             let porcentajePoblacion = setPoblacion.reduce(function(a, b){ return a + b; }).toFixed(5)//Formato.-
 
-            const traeLocalStorage = localStorage.getItem("País") //Obtengo el valor del LS
+            const traeLocalStorage = localStorage.getItem("Pais") //Obtengo el valor del LS
             console.log(`Se guardo en LocalStorage el País: ${traeLocalStorage}`);
 
             if (continenteRegion.length > 0) {
