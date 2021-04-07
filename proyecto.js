@@ -8,7 +8,7 @@ class Api {
         const result = await fetch(Api.baseUrl)
         const parseResult = await result.json()
 
-        // console.log(parseResult);
+        console.log(parseResult);
         obtenerPaises(parseResult)
         busquedaByPais(parseResult)
         busquedaByCapital(parseResult)
